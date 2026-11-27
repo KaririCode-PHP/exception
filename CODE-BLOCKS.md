@@ -44,7 +44,7 @@ imported; **reserved**: kept free on purpose.
 | 1000–1499 | AP | kariricode/async-primitives | claimed | 4.1.0: retry, pool, timeout, runtime detection, process; prefix proposed |
 | 1500–1599 | EX | kariricode/exception | released | 2.0.0: mistakes in a code table (`ExceptionCode`) |
 | 1600–1699 | SSE | kariricode/sse | released | 4.0.0 (SSE_1600–SSE_1630): event fields, configuration, the output stream, the router normalizer |
-| 1700–1799 | HTTP | kariricode/http | claimed | 4.0.0 import; codes beside the HTTP status the exceptions carry |
+| 1700–1799 | HTTP | kariricode/http | released | 4.0.0 (HTTP_1700–HTTP_1766): message arguments, URIs, streams, uploaded files, the SAPI emitter, configuration |
 | 1800–1899 | WS | kariricode/websocket | claimed | 4.0.0 import; codes beside the RFC 6455 close codes the exceptions carry |
 | 1900–1999 | GRPC | kariricode/grpc | claimed | 4.0.0 import; codes beside the gRPC status the exceptions carry |
 | 2000–2499 | EL | kariricode/eventloop | claimed | 4.2.0; prefix proposed |
@@ -79,8 +79,8 @@ imported; **reserved**: kept free on purpose.
 | 9400–9499 | RT | kariricode/runtime | proposed | from 9100–9199, codes shift by +300 |
 | 9500–9999 | PS | kariricode/parser | proposed | from 9000–9999; passes shift by +500 (lexer 9500–9599 … grammar 9900–9999), see Collisions |
 
-Free blocks of 100 or more codes: 1600–1999, 2600–2999, 3200–3999,
-4100–4999, 5400–5999, 6500–6999, 7500–8099.
+Free blocks of 100 or more codes: 2700–2999, 3200–3999, 4100–4999,
+5400–5999, 6500–6999, 7500–8099.
 
 ## Collisions
 

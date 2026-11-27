@@ -9,6 +9,9 @@ follows [Semantic Versioning](https://semver.org/).
 ### Changed
 
 - Registry: the block of sse 4.0.0 (SSE_1600–SSE_1630) is released.
+- Registry: the block of http 4.0.0 (HTTP_1700–HTTP_1766) is released; the
+  list of free blocks no longer counts the blocks the protocol packages
+  claimed.
 
 ## [2.0.2] — 2026-11-27
 
