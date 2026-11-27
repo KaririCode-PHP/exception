@@ -11,6 +11,10 @@ follows [Semantic Versioning](https://semver.org/).
 - Registry: the blocks of database 4.4.0 (DB_6010–DB_6121) and console
   4.6.0 (9001–9007) are released.
 - Registry: the block of cli 4.1.0 (CLI_8900–CLI_8942) is released.
+- Registry: the protocol packages claim the lowest free blocks before their
+  first release: kariricode/sse 1600–1699 (SSE), kariricode/http 1700–1799
+  (HTTP), kariricode/websocket 1800–1899 (WS), kariricode/grpc 1900–1999
+  (GRPC) and kariricode/graphql 2600–2699 (GQL).
 
 ## [2.0.1] — 2026-11-27
 
