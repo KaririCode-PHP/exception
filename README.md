@@ -2,7 +2,7 @@
 
 [![en](https://img.shields.io/badge/lang-en-red.svg)](README.md) [![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](README.pt-br.md)
 
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white) ![PHPUnit](https://img.shields.io/badge/PHPUnit-3776AB?style=for-the-badge&logo=php&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white) ![PHPUnit](https://img.shields.io/badge/PHPUnit-3776AB?style=for-the-badge&logo=php&logoColor=white)
 
 A comprehensive and flexible exception handling component for PHP, part of the KaririCode Framework. It provides a structured approach to error management, enhancing the robustness and maintainability of your applications.
 
@@ -16,7 +16,7 @@ A comprehensive and flexible exception handling component for PHP, part of the K
 - [Error Code Range Table](#error-code-range-table)
 - [Available Exception Types](#available-exception-types)
 - [Integration with Other KaririCode Components](#integration-with-other-kariricode-components)
-- [Development and Testing](#development-and-testing)
+- [Development](#development)
 - [License](#license)
 - [Support and Community](#support-and-community)
 
@@ -298,59 +298,31 @@ The Exception component is designed to work seamlessly with other KaririCode com
 - **KaririCode\Http**: For handling HTTP-related exceptions.
 - **KaririCode\Database**: For database-specific exceptions.
 
-## Development and Testing
+## Development
 
-For development and testing purposes, this package uses Docker and Docker Compose to ensure consistency across different environments. A Makefile is provided for convenience.
+This package keeps no QA tools in `require-dev`. [KaririCode Devkit](https://github.com/KaririCode-PHP/devkit) (`kcode`) installs PHPUnit, PHPStan, Psalm, PHP-CS-Fixer and Rector into `.kcode/` (git-ignored) the first time a command needs them.
 
-### Prerequisites
-
-- Docker
-- Docker Compose
-- Make (optional, but recommended for easier command execution)
-
-### Development Setup
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/KaririCode-Framework/kariricode-exception.git
-   cd kariricode-exception
-   ```
-
-2. Set up the environment:
-
-   ```bash
-   make setup-env
-   ```
-
-3. Start the Docker containers:
-
-   ```bash
-   make up
-   ```
-
-4. Install dependencies:
-
-   ```bash
-   make composer-install
-   ```
-
-### Available Make Commands
-
-- `make up`: Start all services in the background
-- `make down`: Stop and remove all containers
-- `make build`: Build Docker images
-- `make shell`: Access the PHP container shell
-- `make test`: Run tests
-- `make coverage`: Run test coverage with visual formatting
-- `make cs-fix`: Run PHP CS Fixer to fix code style
-- `make quality`: Run all quality commands (cs-check, test, security-check)
-
-For a full list of available commands, run:
+Install `kcode` once (PHP 8.4+):
 
 ```bash
-make help
+wget https://github.com/KaririCode-PHP/devkit/releases/latest/download/kcode.phar
+chmod +x kcode.phar
+sudo mv kcode.phar /usr/local/bin/kcode
 ```
+
+From the repository root:
+
+```bash
+composer install          # runtime dependencies only
+kcode init                # generate .kcode/ and install the toolchain (first run)
+kcode test                # PHPUnit (--coverage, --suite=Unit, any PHPUnit option)
+kcode analyse             # PHPStan, then Psalm
+kcode cs:fix              # apply the code style (--check reports only)
+kcode quality             # the CI gate: cs-fixer, PHPStan, Psalm, PHPUnit
+kcode quality --docker    # the same gate inside the kcode PHP container
+```
+
+Project overrides go in `devkit.php` (`kcode init --config` writes a template); run `kcode init` after editing it. `kcode clean --all` removes `.kcode/`.
 
 ## License
 

@@ -2,7 +2,7 @@
 
 [![en](https://img.shields.io/badge/lang-en-red.svg)](README.md) [![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](README.pt-br.md)
 
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white) ![PHPUnit](https://img.shields.io/badge/PHPUnit-3776AB?style=for-the-badge&logo=php&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white) ![PHPUnit](https://img.shields.io/badge/PHPUnit-3776AB?style=for-the-badge&logo=php&logoColor=white)
 
 Um componente abrangente e flexível de tratamento de exceções para PHP, parte do KaririCode Framework. Ele fornece uma abordagem estruturada para o gerenciamento de erros, melhorando a robustez e a manutenção das suas aplicações.
 
@@ -16,7 +16,7 @@ Um componente abrangente e flexível de tratamento de exceções para PHP, parte
 - [Tabela de Faixas de Código de Erro](#tabela-de-faixas-de-código-de-erro)
 - [Tipos de Exceção Disponíveis](#tipos-de-exceção-disponíveis)
 - [Integração com Outros Componentes do KaririCode](#integração-com-outros-componentes-do-kariricode)
-- [Desenvolvimento e Testes](#desenvolvimento-e-testes)
+- [Desenvolvimento](#desenvolvimento)
 - [Licença](#licença)
 - [Suporte e Comunidade](#suporte-e-comunidade)
 
@@ -299,59 +299,31 @@ O componente de Exceção foi projetado para funcionar perfeitamente com outros 
 - **KaririCode\Http**: Para tratamento de exceções relacionadas a HTTP.
 - **KaririCode\Database**: Para exceções específicas de banco de dados.
 
-## Desenvolvimento e Testes
+## Desenvolvimento
 
-Para fins de desenvolvimento e testes, este pacote utiliza Docker e Docker Compose para garantir consistência entre diferentes ambientes. Um Makefile é fornecido para conveniência.
+Este pacote não mantém ferramentas de QA no `require-dev`. O [KaririCode Devkit](https://github.com/KaririCode-PHP/devkit) (`kcode`) instala PHPUnit, PHPStan, Psalm, PHP-CS-Fixer e Rector em `.kcode/` (ignorado pelo git) na primeira vez que um comando precisa deles.
 
-### Pré-requisitos
-
-- Docker
-- Docker Compose
-- Make (opcional, mas recomendado para facilitar a execução de comandos)
-
-### Configuração de Desenvolvimento
-
-1. Clone o repositório:
-
-   ```bash
-   git clone https://github.com/KaririCode-Framework/kariricode-exception.git
-   cd kariricode-exception
-   ```
-
-2. Configure o ambiente:
-
-   ```bash
-   make setup-env
-   ```
-
-3. Inicie os containers do Docker:
-
-   ```bash
-   make up
-   ```
-
-4. Instale as dependências:
-
-   ```bash
-   make composer-install
-   ```
-
-### Comandos Make Disponíveis
-
-- `make up`: Inicia todos os serviços em segundo plano
-- `make down`: Para e remove todos os containers
-- `make build`: Constrói as imagens Docker
-- `make shell`: Acessa o shell do container PHP
-- `make test`: Executa os testes
-- `make coverage`: Executa a cobertura dos testes com formatação visual
-- `make cs-fix`: Executa o PHP CS Fixer para corrigir o estilo do código
-- `make quality`: Executa todos os comandos de qualidade (cs-check, test, security-check)
-
-Para uma lista completa de comandos disponíveis, execute:
+Instale o `kcode` uma vez (PHP 8.4+):
 
 ```bash
-make help
+wget https://github.com/KaririCode-PHP/devkit/releases/latest/download/kcode.phar
+chmod +x kcode.phar
+sudo mv kcode.phar /usr/local/bin/kcode
 ```
+
+Na raiz do repositório:
+
+```bash
+composer install          # só as dependências de runtime
+kcode init                # gera .kcode/ e instala o toolchain (primeira vez)
+kcode test                # PHPUnit (--coverage, --suite=Unit, qualquer opção do PHPUnit)
+kcode analyse             # PHPStan e depois Psalm
+kcode cs:fix              # aplica o estilo de código (--check só relata)
+kcode quality             # o gate do CI: cs-fixer, PHPStan, Psalm, PHPUnit
+kcode quality --docker    # o mesmo gate dentro do container PHP do kcode
+```
+
+Ajustes do projeto ficam em `devkit.php` (`kcode init --config` gera um modelo); rode `kcode init` depois de editá-lo. `kcode clean --all` remove `.kcode/`.
 
 ## Licença
 
@@ -373,7 +345,7 @@ Desenvolvido com ❤️ pela equipe KaririCode. Capacitando desenvolvedores a li
 
 [![en](https://img.shields.io/badge/lang-en-red.svg)](README.md) [![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](README.pt-br.md)
 
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white) ![PHPUnit](https://img.shields.io/badge/PHPUnit-3776AB?style=for-the-badge&logo=php&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white) ![PHPUnit](https://img.shields.io/badge/PHPUnit-3776AB?style=for-the-badge&logo=php&logoColor=white)
 
 Um componente abrangente e flexível de tratamento de exceções para PHP, parte do KaririCode Framework. Ele fornece uma abordagem estruturada para o gerenciamento de erros, melhorando a robustez e a manutenção das suas aplicações.
 
@@ -387,7 +359,7 @@ Um componente abrangente e flexível de tratamento de exceções para PHP, parte
 - [Tabela de Faixas de Código de Erro](#tabela-de-faixas-de-código-de-erro)
 - [Tipos de Exceção Disponíveis](#tipos-de-exceção-disponíveis)
 - [Integração com Outros Componentes do KaririCode](#integração-com-outros-componentes-do-kariricode)
-- [Desenvolvimento e Testes](#desenvolvimento-e-testes)
+- [Desenvolvimento](#desenvolvimento)
 - [Licença](#licença)
 - [Suporte e Comunidade](#suporte-e-comunidade)
 
@@ -647,59 +619,31 @@ O componente de Exceção foi projetado para funcionar perfeitamente com outros 
 - **KaririCode\Http**: Para tratamento de exceções relacionadas a HTTP.
 - **KaririCode\Database**: Para exceções específicas de banco de dados.
 
-## Desenvolvimento e Testes
+## Desenvolvimento
 
-Para fins de desenvolvimento e testes, este pacote utiliza Docker e Docker Compose para garantir consistência entre diferentes ambientes. Um Makefile é fornecido para conveniência.
+Este pacote não mantém ferramentas de QA no `require-dev`. O [KaririCode Devkit](https://github.com/KaririCode-PHP/devkit) (`kcode`) instala PHPUnit, PHPStan, Psalm, PHP-CS-Fixer e Rector em `.kcode/` (ignorado pelo git) na primeira vez que um comando precisa deles.
 
-### Pré-requisitos
-
-- Docker
-- Docker Compose
-- Make (opcional, mas recomendado para facilitar a execução de comandos)
-
-### Configuração de Desenvolvimento
-
-1. Clone o repositório:
-
-   ```bash
-   git clone https://github.com/KaririCode-Framework/kariricode-exception.git
-   cd kariricode-exception
-   ```
-
-2. Configure o ambiente:
-
-   ```bash
-   make setup-env
-   ```
-
-3. Inicie os containers do Docker:
-
-   ```bash
-   make up
-   ```
-
-4. Instale as dependências:
-
-   ```bash
-   make composer-install
-   ```
-
-### Comandos Make Disponíveis
-
-- `make up`: Inicia todos os serviços em segundo plano
-- `make down`: Para e remove todos os containers
-- `make build`: Constrói as imagens Docker
-- `make shell`: Acessa o shell do container PHP
-- `make test`: Executa os testes
-- `make coverage`: Executa a cobertura dos testes com formatação visual
-- `make cs-fix`: Executa o PHP CS Fixer para corrigir o estilo do código
-- `make quality`: Executa todos os comandos de qualidade (cs-check, test, security-check)
-
-Para uma lista completa de comandos disponíveis, execute:
+Instale o `kcode` uma vez (PHP 8.4+):
 
 ```bash
-make help
+wget https://github.com/KaririCode-PHP/devkit/releases/latest/download/kcode.phar
+chmod +x kcode.phar
+sudo mv kcode.phar /usr/local/bin/kcode
 ```
+
+Na raiz do repositório:
+
+```bash
+composer install          # só as dependências de runtime
+kcode init                # gera .kcode/ e instala o toolchain (primeira vez)
+kcode test                # PHPUnit (--coverage, --suite=Unit, qualquer opção do PHPUnit)
+kcode analyse             # PHPStan e depois Psalm
+kcode cs:fix              # aplica o estilo de código (--check só relata)
+kcode quality             # o gate do CI: cs-fixer, PHPStan, Psalm, PHPUnit
+kcode quality --docker    # o mesmo gate dentro do container PHP do kcode
+```
+
+Ajustes do projeto ficam em `devkit.php` (`kcode init --config` gera um modelo); rode `kcode init` depois de editá-lo. `kcode clean --all` remove `.kcode/`.
 
 ## Licença
 
