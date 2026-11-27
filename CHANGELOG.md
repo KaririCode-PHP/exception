@@ -6,6 +6,10 @@ follows [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+
+- Registry: the block of sse 4.0.0 (SSE_1600–SSE_1630) is released.
+
 ## [2.0.2] — 2026-11-27
 
 Registry update only; the code is the same as in 2.0.0.

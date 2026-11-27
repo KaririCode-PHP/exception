@@ -43,7 +43,7 @@ imported; **reserved**: kept free on purpose.
 |---|---|---|---|---|
 | 1000–1499 | AP | kariricode/async-primitives | claimed | 4.1.0: retry, pool, timeout, runtime detection, process; prefix proposed |
 | 1500–1599 | EX | kariricode/exception | released | 2.0.0: mistakes in a code table (`ExceptionCode`) |
-| 1600–1699 | SSE | kariricode/sse | claimed | 4.0.0 import: event fields, configuration, the output stream, the router normalizer |
+| 1600–1699 | SSE | kariricode/sse | released | 4.0.0 (SSE_1600–SSE_1630): event fields, configuration, the output stream, the router normalizer |
 | 1700–1799 | HTTP | kariricode/http | claimed | 4.0.0 import; codes beside the HTTP status the exceptions carry |
 | 1800–1899 | WS | kariricode/websocket | claimed | 4.0.0 import; codes beside the RFC 6455 close codes the exceptions carry |
 | 1900–1999 | GRPC | kariricode/grpc | claimed | 4.0.0 import; codes beside the gRPC status the exceptions carry |
