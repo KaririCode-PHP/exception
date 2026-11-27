@@ -4,6 +4,13 @@ All notable changes to this package are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the package
 follows [Semantic Versioning](https://semver.org/).
 
+## [Unreleased]
+
+### Changed
+
+- Registry: kariricode/router claims 5000–5099 under RO with its 4.1
+  import (RO_5000–RO_5052); kariricode/console's row points at 4.6.0.
+
 ## [2.0.0] — 2026-11-27
 
 A new package under the old name: optional bases for the exception families

@@ -48,7 +48,7 @@ imported; **reserved**: kept free on purpose.
 | 3000–3049 | AS | kariricode/async | claimed | 4.2.0; prefix proposed |
 | 3100–3169 | DI | kariricode/dependency-injection | claimed | 4.0.0; prefix proposed |
 | 4000–4099 | QU | kariricode/queue | claimed | 4.0.0; prefix proposed |
-| 5000–5099 | RO | kariricode/router | proposed | from 5100–5159, codes shift by −100; prefix proposed |
+| 5000–5099 | RO | kariricode/router | claimed | 4.1 (RO_5000–RO_5052), on the family bases of this package; moved from 5100–5159, codes shift by −100 (router ADR-007) |
 | 5100–5199 | DF | kariricode/dataflow | claimed | 6.0.0 (DF_5100–DF_5139) |
 | 5200–5399 | ORM | kariricode/orm | claimed | 4.8.1, after retiring 9000–9499; prefix proposed |
 | 6000–6199 | DB | kariricode/database | claimed | 4.4.0 (DB_6010–DB_6121) |
@@ -67,7 +67,7 @@ imported; **reserved**: kept free on purpose.
 | 8700–8799 | CD | kariricode/class-discovery | claimed | 3.2 (8701–8740); prefix proposed |
 | 8800–8899 | AU | kariricode/authenticator | proposed | login layer, from 8500–8599, codes shift by +300 |
 | 8900–8999 | CLI | kariricode/cli | proposed | from 8600–8699, codes shift by +300 |
-| 9000–9099 | CN | kariricode/console | claimed | 4.5.0, ADR-003 (9001–9007); prefix proposed |
+| 9000–9099 | CN | kariricode/console | claimed | 4.6.0, ADR-003 and ADR-014 (9001–9007, contract families); prefix proposed |
 | 9100–9199 | I18N | kariricode/i18n | claimed | 4.0.1 (9100–9135) |
 | 9200–9299 | TN | kariricode/tenancy | claimed | 4.1.0 (TN_9200–TN_9230) |
 | 9300–9399 | FW | kariricode/framework | proposed | from 9000–9099, codes shift by +300 |
