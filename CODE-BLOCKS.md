@@ -41,7 +41,7 @@ imported; **reserved**: kept free on purpose.
 
 | Block | Prefix | Package | Status | Notes |
 |---|---|---|---|---|
-| 1000–1499 | AP | kariricode/async-primitives | claimed | 4.1.0: retry, pool, timeout, runtime detection, process; prefix proposed |
+| 1000–1499 | AP | kariricode/async-primitives | released | 4.1.0 (AP_1000–AP_1450): retry and fallback, pools, time limits, process signals, configuration; 1300–1399 reserved for runtime detection |
 | 1500–1599 | EX | kariricode/exception | released | 2.0.0: mistakes in a code table (`ExceptionCode`) |
 | 1600–1699 | SSE | kariricode/sse | released | 4.0.0 (SSE_1600–SSE_1630): event fields, configuration, the output stream, the router normalizer |
 | 1700–1799 | HTTP | kariricode/http | released | 4.0.0 (HTTP_1700–HTTP_1766): message arguments, URIs, streams, uploaded files, the SAPI emitter, configuration |
