@@ -44,11 +44,11 @@ imported; **reserved**: kept free on purpose.
 | 1000–1499 | AP | kariricode/async-primitives | claimed | 4.1.0: retry, pool, timeout, runtime detection, process; prefix proposed |
 | 1500–1599 | EX | kariricode/exception | released | 2.0.0: mistakes in a code table (`ExceptionCode`) |
 | 2000–2499 | EL | kariricode/eventloop | claimed | 4.2.0; prefix proposed |
-| 2500–2599 | PI | kariricode/property-inspector | claimed | 2.1.0 (2501–2506) |
+| 2500–2599 | PI | kariricode/property-inspector | released | 3.0.0 (2503–2523); 2.1.0 used 2501–2506 |
 | 3000–3049 | AS | kariricode/async | claimed | 4.2.0; prefix proposed |
 | 3100–3169 | DI | kariricode/dependency-injection | claimed | 4.0.0; prefix proposed |
 | 4000–4099 | QU | kariricode/queue | claimed | 4.0.0; prefix proposed |
-| 5000–5099 | RO | kariricode/router | claimed | 4.1 (RO_5000–RO_5052), on the family bases of this package; moved from 5100–5159, codes shift by −100 (router ADR-007) |
+| 5000–5099 | RO | kariricode/router | released | 4.1.0 (RO_5000–RO_5052), on the family bases of this package; moved from 5100–5159, codes shift by −100 (router ADR-007) |
 | 5100–5199 | DF | kariricode/dataflow | claimed | 6.0.0 (DF_5100–DF_5139) |
 | 5200–5399 | ORM | kariricode/orm | claimed | 4.8.1, after retiring 9000–9499; prefix proposed |
 | 6000–6199 | DB | kariricode/database | claimed | 4.4.0 (DB_6010–DB_6121) |
@@ -62,9 +62,9 @@ imported; **reserved**: kept free on purpose.
 | 8200–8249 | OB | kariricode/observability | claimed | 4.0; prefix proposed |
 | 8300–8399 | RL | kariricode/rate-limiter | claimed | 4.0.0; contract ADR-004 |
 | 8400–8499 | AU | kariricode/authenticator | claimed | 4.2.0 verification layer (8400–8426); prefix proposed |
-| 8500–8599 | PP | kariricode/processor-pipeline | claimed | 4.0.0, enforced by its conformance suite; prefix proposed |
-| 8600–8699 | CA | kariricode/cache | claimed | 4.1.0 (8600–8659); prefix proposed |
-| 8700–8799 | CD | kariricode/class-discovery | claimed | 3.2 (8701–8740); prefix proposed |
+| 8500–8599 | PP | kariricode/processor-pipeline | released | 3.0.0 (8501–8530), enforced by its conformance suite; prefix proposed |
+| 8600–8699 | CA | kariricode/cache | released | 4.1.0 (8600–8653); prefix proposed |
+| 8700–8799 | CD | kariricode/class-discovery | released | 2.0.0 (8701–8740); prefix proposed |
 | 8800–8899 | AU | kariricode/authenticator | proposed | login layer, from 8500–8599, codes shift by +300 |
 | 8900–8999 | CLI | kariricode/cli | proposed | from 8600–8699, codes shift by +300 |
 | 9000–9099 | CN | kariricode/console | claimed | 4.6.0, ADR-003 and ADR-014 (9001–9007, contract families); prefix proposed |

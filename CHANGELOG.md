@@ -14,6 +14,9 @@ Registry update only; the code is the same as in 2.0.0.
 
 - Registry: kariricode/router claims 5000–5099 under RO with its 4.1
   import (RO_5000–RO_5052); kariricode/console's row points at 4.6.0.
+- Registry: the blocks of property-inspector 3.0.0, processor-pipeline
+  3.0.0, class-discovery 2.0.0, router 4.1.0 and cache 4.1.0 are released;
+  each row names the version and the codes it throws.
 
 ## [2.0.0] — 2026-11-27
 
