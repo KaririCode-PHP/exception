@@ -6,6 +6,11 @@ follows [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+### Changed
+
+- Registry: the blocks of database 4.4.0 (DB_6010–DB_6121) and console
+  4.6.0 (9001–9007) are released.
+
 ## [2.0.1] — 2026-11-27
 
 Registry update only; the code is the same as in 2.0.0.
