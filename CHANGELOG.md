@@ -13,6 +13,7 @@ follows [Semantic Versioning](https://semver.org/).
   list of free blocks no longer counts the blocks the protocol packages
   claimed.
 - Registry: the block of websocket 4.0.0 (WS_1800–WS_1870) is released.
+- Registry: the block of grpc 4.0.0 (GRPC_1900–GRPC_1950) is released.
 
 ## [2.0.2] — 2026-11-27
 

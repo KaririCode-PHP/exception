@@ -46,7 +46,7 @@ imported; **reserved**: kept free on purpose.
 | 1600–1699 | SSE | kariricode/sse | released | 4.0.0 (SSE_1600–SSE_1630): event fields, configuration, the output stream, the router normalizer |
 | 1700–1799 | HTTP | kariricode/http | released | 4.0.0 (HTTP_1700–HTTP_1766): message arguments, URIs, streams, uploaded files, the SAPI emitter, configuration |
 | 1800–1899 | WS | kariricode/websocket | released | 4.0.0 (WS_1800–WS_1870): frames and close payloads from the peer, the opening handshake, messages the application sends, connections and the server socket, configuration, the router normalizer |
-| 1900–1999 | GRPC | kariricode/grpc | claimed | 4.0.0 import; codes beside the gRPC status the exceptions carry |
+| 1900–1999 | GRPC | kariricode/grpc | released | 4.0.0 (GRPC_1900–GRPC_1950): calls ended with a status, values from a client or the transport, length-prefixed messages, configuration, the router normalizer |
 | 2000–2499 | EL | kariricode/eventloop | claimed | 4.2.0; prefix proposed |
 | 2500–2599 | PI | kariricode/property-inspector | released | 3.0.0 (2503–2523); 2.1.0 used 2501–2506 |
 | 2600–2699 | GQL | kariricode/graphql | claimed | 4.0.0 import |
