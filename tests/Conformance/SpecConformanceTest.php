@@ -246,7 +246,8 @@ final class SpecConformanceTest extends TestCase
                 }
 
                 self::assertTrue($method->isStatic(), $type->getName() . '::' . $method->getName() . ' is a named constructor');
-                self::assertSame('self', (string) $method->getReturnType());
+                // PHP 8.5 reports a self return type by the resolved class name.
+                self::assertContains((string) $method->getReturnType(), ['self', $type->getName()]);
                 ++$factories;
             }
 
