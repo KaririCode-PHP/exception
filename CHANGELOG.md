@@ -12,6 +12,7 @@ follows [Semantic Versioning](https://semver.org/).
 - Registry: the block of http 4.0.0 (HTTP_1700–HTTP_1766) is released; the
   list of free blocks no longer counts the blocks the protocol packages
   claimed.
+- Registry: the block of websocket 4.0.0 (WS_1800–WS_1870) is released.
 
 ## [2.0.2] — 2026-11-27
 
