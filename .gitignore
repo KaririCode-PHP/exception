@@ -65,3 +65,6 @@ lista_de_arquivos.txt
 lista_de_arquivos_tests.txt
 add_static_to_providers.php
 /composer.lock
+
+# KaririCode Devkit (generated, see devkit.php)
+/.kcode/
