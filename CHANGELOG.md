@@ -16,6 +16,7 @@ follows [Semantic Versioning](https://semver.org/).
 - Registry: the block of grpc 4.0.0 (GRPC_1900–GRPC_1950) is released.
 - Registry: the block of async-primitives 4.1.0 (AP_1000–AP_1450) is
   released; 1300–1399 stays reserved for runtime detection.
+- Registry: the block of eventloop 4.2.0 (EL_2000–EL_2450) is released.
 
 ## [2.0.2] — 2026-11-27
 
