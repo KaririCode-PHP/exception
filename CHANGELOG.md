@@ -6,6 +6,10 @@ follows [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+## [2.0.1] — 2026-11-27
+
+Registry update only; the code is the same as in 2.0.0.
+
 ### Changed
 
 - Registry: kariricode/router claims 5000–5099 under RO with its 4.1
@@ -64,4 +68,5 @@ The 1.x line, up to 1.2.4, was published from
 `KaririCode-Framework/kariricode-exception`; see its tags and the git
 history. It stays installable with `^1.2`; 2.0.0 supersedes it.
 
+[2.0.1]: https://github.com/KaririCode-PHP/exception/releases/tag/v2.0.1
 [2.0.0]: https://github.com/KaririCode-PHP/exception/releases/tag/v2.0.0
