@@ -66,7 +66,7 @@ imported; **reserved**: kept free on purpose.
 | 8600–8699 | CA | kariricode/cache | released | 4.1.0 (8600–8653); prefix proposed |
 | 8700–8799 | CD | kariricode/class-discovery | released | 2.0.0 (8701–8740); prefix proposed |
 | 8800–8899 | AU | kariricode/authenticator | proposed | login layer, from 8500–8599, codes shift by +300 |
-| 8900–8999 | CLI | kariricode/cli | proposed | from 8600–8699, codes shift by +300 |
+| 8900–8999 | CLI | kariricode/cli | released | 4.1.0 (8900–8942, contract families; ADR-009); moved from 8600–8699 by +300 before release |
 | 9000–9099 | CN | kariricode/console | released | 4.6.0 (9001–9007, contract families; ADR-003 and ADR-014); prefix proposed |
 | 9100–9199 | I18N | kariricode/i18n | claimed | 4.0.1 (9100–9135) |
 | 9200–9299 | TN | kariricode/tenancy | claimed | 4.1.0 (TN_9200–TN_9230) |
