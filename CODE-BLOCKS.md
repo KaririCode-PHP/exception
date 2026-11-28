@@ -52,6 +52,7 @@ imported; **reserved**: kept free on purpose.
 | 2600–2699 | GQL | kariricode/graphql | claimed | 4.0.0 import |
 | 2700–2799 | ENV | kariricode/dotenv | claimed | 4.5.0 (ENV_2700–ENV_2761): .env syntax, loading, configuration and keys, validation, conversion, encryption, the cache; earlier releases threw uncoded exceptions |
 | 2800–2899 | CFG | kariricode/configurator | claimed | 4.2.0 (CFG_2800–CFG_2860): access to a built configuration, files, parsing, interpolation and casts, encryption, schema validation, merging; 1.0.0 threw uncoded exceptions, and the unreleased 4.2 tarball used 1000–1399 (see Collisions) |
+| 2900–2999 | LOG | kariricode/logging | claimed | 4.0.0 (LOG_2901–LOG_2990): log levels, channels, logger definitions, trace context, entries a handler did not deliver, settings; 1.x threw uncoded exceptions and the 4.0 tarball no codes |
 | 3000–3049 | AS | kariricode/async | claimed | 4.2.0; prefix proposed |
 | 3100–3169 | DI | kariricode/dependency-injection | claimed | 4.0.0; prefix proposed |
 | 4000–4099 | QU | kariricode/queue | claimed | 4.0.0; prefix proposed |
@@ -81,8 +82,8 @@ imported; **reserved**: kept free on purpose.
 | 9400–9499 | RT | kariricode/runtime | claimed | 4.0.5 (RT_9400–RT_9430), on the family bases of this package; moved from 9100–9199 by +300 before release (runtime ADR-008) |
 | 9500–9999 | PS | kariricode/parser | claimed | 4.1.0: diagnostics of the lexer 9500–9599, syntax 9600–9699, binder 9700–9799, type checker 9800–9899, grammar 9900–9989; exceptions PS_9900 and PS_9990; moved from 9000–9999 by +500 before release (parser ADR-011) |
 
-Free blocks of 100 or more codes: 2900–2999, 3200–3999, 4100–4999,
-5400–5999, 6500–6999, 7500–8099.
+Free blocks of 100 or more codes: 3200–3999, 4100–4999, 5400–5999,
+6500–6999, 7500–8099.
 
 ## Collisions
 

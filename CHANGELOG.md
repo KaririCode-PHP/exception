@@ -26,6 +26,8 @@ follows [Semantic Versioning](https://semver.org/).
 - Registry: kariricode/service-client claims 6400–6499 under SC
   (SC_6401–SC_6491), the block proposed when the 6000–6099 of its 4.0.1
   tarball collided with database; its codes shift by +400.
+- Registry: kariricode/logging claims 2900–2999 under LOG, the lowest free
+  block of 100 codes, before its first coded release (4.0.0).
 
 ## [2.0.2] — 2026-11-27
 
