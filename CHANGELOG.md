@@ -17,6 +17,9 @@ follows [Semantic Versioning](https://semver.org/).
 - Registry: the block of async-primitives 4.1.0 (AP_1000–AP_1450) is
   released; 1300–1399 stays reserved for runtime detection.
 - Registry: the block of eventloop 4.2.0 (EL_2000–EL_2450) is released.
+- Registry: kariricode/dotenv claims 2700–2799 under ENV, the lowest free
+  block of 100 codes; the blocks of runtime 4.0.5 (RT_9400–RT_9430) and
+  parser 4.1.0 (9500–9999) move from proposed to claimed.
 
 ## [2.0.2] — 2026-11-27
 
