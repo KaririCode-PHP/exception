@@ -58,6 +58,7 @@ imported; **reserved**: kept free on purpose.
 | 3200–3299 | VAL | kariricode/validator | claimed | 3.0.0 (VAL_3201–VAL_3240): rule definitions and the registry 3200–3219, settings and container bindings 3220–3229, the outcome of a validation 3230–3239, the integrations 3240–3249; earlier releases threw uncoded exceptions |
 | 3300–3399 | SAN | kariricode/sanitizer | claimed | 2.0.0 (SAN_3301–SAN_3340): rule definitions and the registry 3300–3319, container bindings 3320–3329, the integrations 3340–3349; earlier releases threw uncoded exceptions |
 | 3400–3499 | TRF | kariricode/transformer | claimed | 3.0.0 (TRF_3401–TRF_3440): rule definitions and the registry 3400–3419, container bindings 3420–3429, the integrations 3440–3449; earlier releases threw uncoded exceptions |
+| 3500–3599 | SER | kariricode/serializer | claimed | 2.0.0 (SER_3501–SER_3560): the registry, parameters and attributes 3500–3519, data and payloads 3520–3539, container bindings 3540–3549, the integrations 3560–3569; earlier releases threw uncoded exceptions |
 | 4000–4099 | QU | kariricode/queue | claimed | 4.0.0; prefix proposed |
 | 5000–5099 | RO | kariricode/router | released | 4.1.0 (RO_5000–RO_5052), on the family bases of this package; moved from 5100–5159, codes shift by −100 (router ADR-007) |
 | 5100–5199 | DF | kariricode/dataflow | claimed | 6.0.0 (DF_5100–DF_5139) |
@@ -85,7 +86,7 @@ imported; **reserved**: kept free on purpose.
 | 9400–9499 | RT | kariricode/runtime | claimed | 4.0.5 (RT_9400–RT_9430), on the family bases of this package; moved from 9100–9199 by +300 before release (runtime ADR-008) |
 | 9500–9999 | PS | kariricode/parser | claimed | 4.1.0: diagnostics of the lexer 9500–9599, syntax 9600–9699, binder 9700–9799, type checker 9800–9899, grammar 9900–9989; exceptions PS_9900 and PS_9990; moved from 9000–9999 by +500 before release (parser ADR-011) |
 
-Free blocks of 100 or more codes: 3500–3999, 4100–4999, 5400–5999,
+Free blocks of 100 or more codes: 3600–3999, 4100–4999, 5400–5999,
 6500–6999, 7500–8099.
 
 ## Collisions

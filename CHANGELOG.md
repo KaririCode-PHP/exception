@@ -36,6 +36,8 @@ follows [Semantic Versioning](https://semver.org/).
   free block of 100 codes, before its first coded release (2.0.0).
 - Registry: kariricode/transformer claims 3400–3499 under TRF, the lowest
   free block of 100 codes, before its first coded release (3.0.0).
+- Registry: kariricode/serializer claims 3500–3599 under SER, the lowest
+  free block of 100 codes, before its first coded release (2.0.0).
 
 ## [2.0.2] — 2026-11-27
 
