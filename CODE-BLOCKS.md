@@ -60,7 +60,7 @@ imported; **reserved**: kept free on purpose.
 | 5200–5399 | ORM | kariricode/orm | claimed | 4.8.1, after retiring 9000–9499; prefix proposed |
 | 6000–6199 | DB | kariricode/database | released | 4.4.0 (DB_6010–DB_6121) |
 | 6200–6399 | NS | kariricode/nosql | claimed | 4.0.0 |
-| 6400–6499 | SC | kariricode/service-client | proposed | from 6000–6099, codes shift by +400 |
+| 6400–6499 | SC | kariricode/service-client | claimed | 4.0.1 (SC_6401–SC_6491): service and transport lookup, connections and timeouts, transport errors and response size, the upstream status, response and payload encoding, the open circuit, closed channels, request headers, methods and paths, configuration; the 4.0.1 tarball used 6000–6099 (see Collisions), codes shift by +400 |
 | 7000–7099 | TM | kariricode/template | claimed | 4.0.0 (TM_7001–TM_7059) |
 | 7100–7199 | CB | kariricode/circuit-breaker | claimed | 4.0.0 |
 | 7200–7299 | — | examples, fixtures and documentation | reserved | never thrown by a released package; this package's tests use it |
@@ -92,7 +92,7 @@ component. "Moves" applies rule 5.
 | Claim | Claimed by | Collides with | Resolution |
 |---|---|---|---|
 | 5100–5159 | router 4.0.0 (02-ok) | dataflow 6.0.0 (02-ok), DF_5100–DF_5139 | both reviewed, dataflow throws more codes: router moves to 5000–5099 |
-| 6000–6099 | service-client 4.0.1 (unmarked) | database 4.4.0 (02-ok) | database is reviewed: service-client moves to 6400–6499 |
+| 6000–6099 | service-client 4.0.1 (unmarked) | database 4.4.0 (02-ok) | database is reviewed: service-client moves to 6400–6499 and claims it before its first coded release (service-client ADR-006) |
 | 8500–8599 | authenticator 4.2.0 login layer (02-ok) | processor-pipeline 4.0.0 (01-ok-gh) | both reviewed; processor-pipeline throws 8500–8599, the login layer only reserves it: the login layer moves to 8800–8899 |
 | 8600–8699 | cli 4.1.0 (02-ok), CLI_8600–CLI_8642 | cache 4.1.0 (02-ok), 8600–8659 | both reviewed, cache throws more codes: cli moves to 8900–8999 |
 | 9000–9099 | framework 4.0.1 (unmarked), FW_9000–FW_9059 | console 4.5.0 (02-ok) | console is reviewed: framework moves to 9300–9399 |
