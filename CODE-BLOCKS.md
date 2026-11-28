@@ -51,6 +51,7 @@ imported; **reserved**: kept free on purpose.
 | 2500–2599 | PI | kariricode/property-inspector | released | 3.0.0 (2503–2523); 2.1.0 used 2501–2506 |
 | 2600–2699 | GQL | kariricode/graphql | claimed | 4.0.0 import |
 | 2700–2799 | ENV | kariricode/dotenv | claimed | 4.5.0 (ENV_2700–ENV_2761): .env syntax, loading, configuration and keys, validation, conversion, encryption, the cache; earlier releases threw uncoded exceptions |
+| 2800–2899 | CFG | kariricode/configurator | claimed | 4.2.0 (CFG_2800–CFG_2860): access to a built configuration, files, parsing, interpolation and casts, encryption, schema validation, merging; 1.0.0 threw uncoded exceptions, and the unreleased 4.2 tarball used 1000–1399 (see Collisions) |
 | 3000–3049 | AS | kariricode/async | claimed | 4.2.0; prefix proposed |
 | 3100–3169 | DI | kariricode/dependency-injection | claimed | 4.0.0; prefix proposed |
 | 4000–4099 | QU | kariricode/queue | claimed | 4.0.0; prefix proposed |
@@ -80,7 +81,7 @@ imported; **reserved**: kept free on purpose.
 | 9400–9499 | RT | kariricode/runtime | claimed | 4.0.5 (RT_9400–RT_9430), on the family bases of this package; moved from 9100–9199 by +300 before release (runtime ADR-008) |
 | 9500–9999 | PS | kariricode/parser | claimed | 4.1.0: diagnostics of the lexer 9500–9599, syntax 9600–9699, binder 9700–9799, type checker 9800–9899, grammar 9900–9989; exceptions PS_9900 and PS_9990; moved from 9000–9999 by +500 before release (parser ADR-011) |
 
-Free blocks of 100 or more codes: 2800–2999, 3200–3999, 4100–4999,
+Free blocks of 100 or more codes: 2900–2999, 3200–3999, 4100–4999,
 5400–5999, 6500–6999, 7500–8099.
 
 ## Collisions
@@ -97,6 +98,7 @@ component. "Moves" applies rule 5.
 | 9000–9099 | framework 4.0.1 (unmarked), FW_9000–FW_9059 | console 4.5.0 (02-ok) | console is reviewed: framework moves to 9300–9399 |
 | 9100–9199 | runtime 4.0.5 (unmarked), RT_9100–RT_9130 | i18n 4.0.1 (unmarked), 9100–9135 | neither reviewed, i18n throws more codes: runtime moves to 9400–9499 |
 | 9000–9999 | parser 4.1.0 (unmarked) | console, i18n, tenancy, framework, runtime | parser moves to 9500–9999; its five passes keep 100 codes each, and the codes it now keeps in 9500–9999 (9500, 9501, 9999) move inside that layout on import |
+| 1000–1399 | configurator 4.2 tarball (unmarked), 19 codes in 1000–1009, 1100–1104, 1200–1202, 1300 | async-primitives 4.1.0, released | async-primitives keeps the block (a). The configurator never released a code, so instead of a 400-code block with a constant offset it claims 2800–2899 under rule 3 and lays its codes out again by area (configurator ADR-011) |
 | 7000–7299 | authenticator 4.1 drafts | template 4.0.0 | void: authenticator 4.2.0 left the block |
 | 8400–8599 | cache 4.1.0 drafts | authenticator 4.2.0 | void: cache 4.1.0 moved to 8600–8699 |
 | 9200–9399 | cli 4.0 | tenancy 4.1.0 | void: cli 4.1.0 left the block |

@@ -20,6 +20,9 @@ follows [Semantic Versioning](https://semver.org/).
 - Registry: kariricode/dotenv claims 2700–2799 under ENV, the lowest free
   block of 100 codes; the blocks of runtime 4.0.5 (RT_9400–RT_9430) and
   parser 4.1.0 (9500–9999) move from proposed to claimed.
+- Registry: kariricode/configurator claims 2800–2899 under CFG, the lowest
+  free block of 100 codes; the 1000–1399 of its unreleased 4.2 tarball,
+  which collided with async-primitives, is recorded under Collisions.
 
 ## [2.0.2] — 2026-11-27
 
