@@ -49,7 +49,7 @@ imported; **reserved**: kept free on purpose.
 | 1900–1999 | GRPC | kariricode/grpc | released | 4.0.0 (GRPC_1900–GRPC_1950): calls ended with a status, values from a client or the transport, length-prefixed messages, configuration, the router normalizer |
 | 2000–2499 | EL | kariricode/eventloop | released | 4.2.0 (EL_2000–EL_2450): the loop and fiber suspensions, callback ids, timers, streams, signals, cancellation |
 | 2500–2599 | PI | kariricode/property-inspector | released | 3.0.0 (2503–2523); 2.1.0 used 2501–2506 |
-| 2600–2699 | GQL | kariricode/graphql | claimed | 4.0.0 import |
+| 2600–2699 | GQL | kariricode/graphql | claimed | 4.0.0 (GQL_2601–GQL_2690): the type system 2600–2629, the operation model 2630–2639, coercion 2640–2649, execution 2650–2659, the router normalizer 2680–2689, settings 2690–2699; the 4.0 tarball threw uncoded exceptions |
 | 2700–2799 | ENV | kariricode/dotenv | claimed | 4.5.0 (ENV_2700–ENV_2761): .env syntax, loading, configuration and keys, validation, conversion, encryption, the cache; earlier releases threw uncoded exceptions |
 | 2800–2899 | CFG | kariricode/configurator | claimed | 4.2.0 (CFG_2800–CFG_2860): access to a built configuration, files, parsing, interpolation and casts, encryption, schema validation, merging; 1.0.0 threw uncoded exceptions, and the unreleased 4.2 tarball used 1000–1399 (see Collisions) |
 | 2900–2999 | LOG | kariricode/logging | claimed | 4.0.0 (LOG_2901–LOG_2990): log levels, channels, logger definitions, trace context, entries a handler did not deliver, settings; 1.x threw uncoded exceptions and the 4.0 tarball no codes |

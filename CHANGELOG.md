@@ -28,6 +28,8 @@ follows [Semantic Versioning](https://semver.org/).
   tarball collided with database; its codes shift by +400.
 - Registry: kariricode/logging claims 2900–2999 under LOG, the lowest free
   block of 100 codes, before its first coded release (4.0.0).
+- Registry: the claim of kariricode/graphql (2600–2699, GQL) records its
+  4.0.0 codes, GQL_2601–GQL_2690, and their layout.
 
 ## [2.0.2] — 2026-11-27
 
