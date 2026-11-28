@@ -30,6 +30,8 @@ follows [Semantic Versioning](https://semver.org/).
   block of 100 codes, before its first coded release (4.0.0).
 - Registry: the claim of kariricode/graphql (2600–2699, GQL) records its
   4.0.0 codes, GQL_2601–GQL_2690, and their layout.
+- Registry: kariricode/validator claims 3200–3299 under VAL, the lowest
+  free block of 100 codes, before its first coded release (3.0.0).
 
 ## [2.0.2] — 2026-11-27
 
